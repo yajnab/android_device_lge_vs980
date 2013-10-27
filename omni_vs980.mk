@@ -1,22 +1,22 @@
 ## Specify phone tech before including full_phone
-$(call inherit-product, vendor/cm/config/cdma.mk)
+$(call inherit-product, vendor/omni/config/cdma.mk)
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
 
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+# Inherit some common omni stuff.
+$(call inherit-product, vendor/omni/config/common.mk)
 
-# Enhanced NFC
-$(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
+# Enhanced NFC(Disabled till NFC support comes for OmniROM)
+#$(call inherit-product, vendor/omni/config/nfc_enhanced.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/lge/vs980/vs980.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := vs980
-PRODUCT_NAME := cm_vs980
+PRODUCT_NAME := omni_vs980
 PRODUCT_BRAND := LGE
 PRODUCT_MODEL := LG-VS980
 PRODUCT_MANUFACTURER := lge

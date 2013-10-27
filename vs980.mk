@@ -21,7 +21,7 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 PRODUCT_DEVICE := vs980
-PRODUCT_NAME := full_vs980
+PRODUCT_NAME := omni_vs980
 PRODUCT_BRAND := LGE
 PRODUCT_MODEL := LG-VS980
 PRODUCT_MANUFACTURER := lge
